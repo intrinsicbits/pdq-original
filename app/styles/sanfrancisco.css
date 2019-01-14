@@ -1,0 +1,190 @@
+body {
+  font-family: 'roboto';
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+}
+
+.currency-symbol {
+  font-size: 32px;
+  line-height: 72px;
+}
+
+.ampm {
+  font-size: 48px;
+  line-height: 48px;
+  color: #A1A1A1;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.canvas1080p {
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+}
+
+.theme-sanfrancisco * {
+  font-family: 'roboto';
+  font-weight: 100;
+  color: #f1f1f1;
+}
+
+.theme-sanfrancisco h1,
+.theme-sanfrancisco h2,
+.theme-sanfrancisco h3,
+.theme-sanfrancisco h4,
+.theme-sanfrancisco h5,
+.theme-sanfrancisco h6 {
+  font-family: 'roboto';
+  font-weight: 100;
+  color: #f1f1f1;
+}
+
+.theme-sanfrancisco .grouping {
+  float: right;
+  margin-right: .5em;
+  margin-left: .5em;
+  font-size: 60px;
+}
+
+.theme-sanfrancisco .btc.grouping div {
+  text-align: right;
+}
+
+#sellprice_net {
+  font-size: 120px;
+}
+#sellprice_net .currency-symbol {
+  font-size: 60px;
+}
+
+.theme-sanfrancisco .btc.grouping label {
+  display: block;
+  color: #C5C06C;
+  font-size: 32px;
+  text-align: right;
+  margin-top: -20px;
+  font-weight: 300;
+}
+
+.theme-sanfrancisco .muni.grouping {
+  position: absolute;
+  top: .5em;
+  left: 0;
+}
+
+.theme-sanfrancisco .muni.grouping div {
+  overflow: hidden;
+  font-size: 110px;
+  text-align: right;
+  min-height: 100px;
+  min-width: 120px;
+  background-color: rgba(0,0,0, 0.75);
+  padding: 0.125em;
+  margin-bottom: 0.125em;
+  border-radius: 24px;
+  font-weight: 400;
+}
+
+.theme-sanfrancisco .muni.grouping div > span {
+  float: right;
+}
+
+.theme-sanfrancisco .muni.grouping label {
+  font-size: 80px;
+  font-weight: 300;
+  float: left;
+}
+
+.theme-sanfrancisco .date.grouping {
+  position: absolute;
+  bottom: 0.5em;
+  right: 0;
+}
+
+.theme-sanfrancisco .date.grouping h1 {
+  
+  font-size: 230px;
+  line-height: 230px;
+  margin: 0;
+  padding: 0;
+}
+
+.theme-sanfrancisco .date.grouping h3 {
+  font-size: 100px;
+  line-height: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+.theme-sanfrancisco .muni.grouping label {
+  min-width: 70px;
+  display: inline-block;
+  color: #F2E00C;
+  font-size: 48px;
+  text-align: left;
+}
+
+.theme-sanfrancisco .weather.grouping {
+  position: absolute;
+  left: 0em;
+  bottom: .5em;
+}
+
+.theme-sanfrancisco .weather.grouping div.daypod {
+  float: left;
+  /*width: 256px;*/
+  background-color: rgba(0,0,0, 0.55);
+  /*padding: 0.25em;*/
+  margin-right: 0.125em;
+  border-radius: 28px;
+}
+
+.theme-sanfrancisco .weather.grouping div.daypod canvas {
+  width: 72px;
+  margin: 24px 24px 0 24px;
+}
+
+.theme-sanfrancisco .weather.grouping div label {
+  float: left;
+  font-size: 32px;
+}
+
+.theme-sanfrancisco .muni {
+  margin-left: .5em;
+  font-size: 60px;
+}
+
+#kst {
+  font-size: 84px;
+  color: #CBCCB9;
+}
+
+.current-temp {
+  /*float: left;*/
+  font-size: 84px;
+  line-height: 150px;
+  margin-right: 0.125em;
+}
+
+.current-temp sup {
+  font-size: 50%;
+  display: none;
+}
+
+.weather-temps {
+  font-size: 36px;
+  text-align: center;
+}
+.weather-temps .high {
+  color: #FBD1FA;
+}
+.weather-temps .low {
+  color: #AFE9FB;
+}
+
+.weather-date {
+  border-top: 1px solid #333;
+  font-size: 36px;
+  text-align: center;
+}

@@ -1,0 +1,71 @@
+<div class="canvas1080p theme-sanfrancisco" ng-controller="MainCtrl">
+  
+  <div class="muni grouping">
+  
+    <div>
+      <label>2</label>
+      <span>{{two.predictions[0]}}</span>
+    </div>
+    
+    <div>
+      <label>3</label>
+      <span>{{three.predictions[0]}}</span>
+    </div>
+    
+    <div>
+      <label>22</label>
+      <span>{{twentyTwo.predictions[0]}}</span>
+    </div>
+    
+  </div>
+  
+  <div class="btc grouping">
+    
+    <div id="sellprice_net">
+      <sup class="currency-symbol">$</sup>{{coinbase.amount | number:0 }} <label>Sell</label>
+    </div>
+    <div id="sellprice_gross">
+      <sup class="currency-symbol">$</sup>{{coinbase.subtotal.amount | number:0 }} <label>Buy</label>
+    </div>
+    <div id="value_20_btc">
+      <sup class="currency-symbol">$</sup>{{twentybtcnet*1000*1.5 | number:0 }} <label>30BTC Net</label>
+    </div>
+    <div id="volume" class="blockchain">
+      {{transactioncount | number:0}} <label>Vol</label>
+    </div>
+    
+  </div>
+  
+  <div class="weather grouping">
+    
+    <div class="current-temp">
+      {{ weather.current.temperature | number:0 }}&deg;<sup>F</sup>
+      {{ (weather.current.temperature - 32) / 1.8000 | number:0 }}&deg;<sup>C</sup>
+      <canvas class="skycon-canvas" id="skycon-now" width="144" height="144"></canvas>
+    </div>
+    
+    <div class="daypod" ng-repeat="day in weather.daily.data">
+      
+      <canvas class="skycon-canvas skycon-{{day.icon}}" id="skycon-{{$index}}" width="72" height="72"></canvas>
+      
+      <div class="weather-temps">
+        <span class="low">{{day.temperatureMin | number: 0}}</span>
+        <span class="high">{{day.temperatureMax | number: 0}}</span>
+      </div>
+      
+      <div class="weather-date">{{epochToDate(day.time, 'M/D')}}</div>
+    </div>
+    
+  </div>
+  
+  
+  
+  <div class="date grouping">
+    
+    <h3>{{dayOfWeek}}, {{todaysDate}}</h3>
+    <h1>{{now}}<span class="ampm">{{ampm}}</span></h1>
+    <h3 id="kst">{{dateTimeKST}}<span class="ampm">kst</span></h3>
+    
+  </div>
+  
+</div>

@@ -1,0 +1,73 @@
+<!doctype html>
+<!-- 
+
+ _                  _            _          _     _
+(_)       _        (_)          (_)        | |   (_)  _
+ _ ____ _| |_  ____ _ ____   ___ _  ____   | |__  _ _| |_  ___
+| |  _ (_   _)/ ___) |  _ \ /___) |/ ___)  |  _ \| (_   _)/___)
+| | | | || |_| |   | | | | |___ | ( (___   | |_) ) | | |_|___ |
+|_|_| |_| \__)_|   |_|_| |_(___/|_|\____)  |____/|_|  \__|___/
+
+ -->
+<html class="no-js">
+  <head>
+    <base href="/">
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta http-equiv="refresh" content="3600">
+    <meta name="viewport" content="width=device-width">
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+    
+    <script type="text/javascript" src="//use.typekit.net/jch3zgd.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.tmp) styles/vendor.css -->
+    <link rel="stylesheet" href="styles/bootstrap.css" />
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/dashboard.css">
+    <link rel="stylesheet" href="styles/sanfrancisco.css">
+    <!-- endbuild -->
+    
+    <!--script type="text/javascript" src="//use.typekit.net/vtx5pkj.js"></script -->
+    <!--script type="text/javascript">try{Typekit.load();}catch(e){}</script -->
+    
+  </head>
+  <body ng-app="btcApp">
+      
+    <div ng-view></div>
+
+    <!-- build:js(app) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower/jquery/dist/jquery.js"></script>
+    <script src="bower/es5-shim/es5-shim.js"></script>
+    <script src="bower/angular/angular.js"></script>
+    <script src="bower/json3/lib/json3.js"></script>
+    <script src="bower/angular-resource/angular-resource.js"></script>
+    <script src="bower/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower/angular-route/angular-route.js"></script>
+    <script src="bower/d3/d3.js"></script>
+    <script src="bower/lodash/dist/lodash.compat.js"></script>
+    <script src="bower/moment/moment.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    
+    <script src="scripts/lib/skycons.js"></script>
+    <!-- script src="scripts/app.js"></script -->
+    <script src="scripts/core.js"></script>
+    <script src="scripts/config.js"></script>
+    <script src="scripts/directives/btcGraph.js"></script>
+    <script src="scripts/controllers/MainCtrl.js"></script>
+    
+    <!-- endbuild -->
+</body>
+</html>
